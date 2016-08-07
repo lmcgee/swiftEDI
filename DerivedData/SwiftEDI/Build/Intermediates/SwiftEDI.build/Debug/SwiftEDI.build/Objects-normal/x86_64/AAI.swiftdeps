@@ -1,0 +1,66 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AAI"
+provides-nominal:
+- "C8SwiftEDI3AAI"
+provides-member:
+- ["C8SwiftEDI3AAI", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "C997"
+- "AAI"
+- !private "FloatLiteralType"
+- !private "UnicodeScalarType"
+- !private "IntegerLiteralType"
+- "Segment"
+- !private "+="
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- ["C8SwiftEDI3AAI", "C997"]
+- ["C8SwiftEDI3AAI", "String"]
+- ["C8SwiftEDI3AAI", "accommodationAllocationInformation1_C997"]
+- ["C8SwiftEDI3AAI", "accommodationAllocationInformation_C997"]
+- ["C8SwiftEDI3AAI", "deinit"]
+- !private ["C8SwiftEDI3AAI", "descEDISeg"]
+- ["C8SwiftEDI3AAI", "description"]
+- ["C8SwiftEDI3AAI", "init"]
+- ["Ps9AnyObject", "accommodationAllocationInformation1_C997"]
+- ["Ps9AnyObject", "accommodationAllocationInformation_C997"]
+- !private ["Ps9AnyObject", "descEDISeg"]
+- ["Ps9AnyObject", "description"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["C8SwiftEDI9Composite", "C997"]
+- ["C8SwiftEDI9Composite", "String"]
+- ["C8SwiftEDI9Composite", "accommodationAllocationInformation1_C997"]
+- ["C8SwiftEDI9Composite", "accommodationAllocationInformation_C997"]
+- !private ["C8SwiftEDI9Composite", "descEDISeg"]
+- ["C8SwiftEDI9Composite", "description"]
+- ["C8SwiftEDI9Composite", "init"]
+- ["C8SwiftEDI7Segment", "C997"]
+- ["C8SwiftEDI7Segment", "String"]
+- ["C8SwiftEDI7Segment", "accommodationAllocationInformation1_C997"]
+- ["C8SwiftEDI7Segment", "accommodationAllocationInformation_C997"]
+- !private ["C8SwiftEDI7Segment", "descEDISeg"]
+- ["C8SwiftEDI7Segment", "description"]
+- ["C8SwiftEDI7Segment", "init"]
+- ["C8SwiftEDI7Segment", ""]
+- !private ["Vs12StaticString", "deinit"]
+depends-nominal:
+- "C8SwiftEDI3AAI"
+- "Ps9AnyObject"
+- "C8SwiftEDI9Composite"
+- "C8SwiftEDI7Segment"
+- !private "Vs12StaticString"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/larryEmcgee/StanfordUniversity/SwiftEDI/SwiftEDI-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+interface-hash: "c34a899415e3a479b72b7d22cdaed9ba"

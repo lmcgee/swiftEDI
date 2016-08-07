@@ -1,0 +1,1360 @@
+C012 REQUESTOR IDENTIFICATION DETAILS
+Function To identify the requestor by a unique identification number and
+an authority code.
+3806 Requestor identification C 1 an..34
+9879 Identification code set designator C 1 an..4
+9880 Office identification C 1 an..7
+9881 Requestor authority code C 1 an..4
+C013 OUTBOUND CARRIER DETAILS
+Function To identify the airline company and an associated airline
+company.
+3127 Carrier identification M 2 an..17
+*3127 Carrier identification C 1 an..17
+C014 OUTBOUND FLIGHT NUMBER DETAILS
+Function To specify the flight number and operational suffix of the
+outbound flight.
+3802 Flight number M 1 n..4
+9801 Operational suffix to the carrier code C 1 a1
+C015 INBOUND CARRIER DETAILS
+Function To identify the airline company and an associated airline
+company.
+3127 Carrier identification M 2 an..17
+*3127 Carrier identification C 1 an..17
+C016 INBOUND FLIGHT NUMBER DETAILS
+Function To specify the flight number and operational suffix of the
+inbound flight.
+3802 Flight number M 1 n..4
+9801 Operational suffix to the carrier code C 1 a1
+C017 PASSENGER TYPE DETAILS
+Function To specify the type of passenger, i.e., adult, child, and to
+indicate if the passenger is accompanied by an infant.
+9819 Passenger type M 1 a1
+9884 Passenger with infant indicator C 1 a1
+C018 INFANT NAME DETAILS
+Function To specify the surname and given name of a passenger.
+3808 Surname C 1 a..64
+3809 Given name C 1 a..64
+PADIS Message Standards Document
+Version 11.1 346
+Tag Name Status Repetitions Format
+C019 CHECKED-IN SEQUENCE DETAILS
+Function A unique number to identify the passenger.
+9852 Checked-in sequence number M 2 n..4
+*9852 Checked-in sequence number C 1 n..4
+C020 PASSENGER PARTY REFERENCE DETAILS
+Function A unique alpha or numeric reference to identify a passenger as
+a member of a group.
+9826 Alpha party reference M 1 a..2
+9827 Numeric party reference M 1 n..3
+C021 SURNAME CONNECTOR DETAILS
+Function A reference to identify a passenger as part of a family with the
+same surname and the number of passengers in the family.
+9828 Surname/family name connector M 1 n..2
+9829 Passenger number within a surname/family name M 1 n..2
+C022 PNR ON BOOKING SYSTEM DETAILS
+Function To specify the information required to identify a reservation.
+3127 Carrier identification M 1 an..17
+9823 Passenger name record locator M 1 an..9
+C023 CLASS DETAILS
+Function To specify the class of service by an alpha character or a
+numeric for the cabin class.
+9800 Reservation booking designator M 1 a1
+9873 Cabin class of service, coded C 1 n1
+C024 GENERIC SEAT REQUEST DETAILS
+Function To specify the type of seat requested on a means of transport.
+9807 No smoking indicator M 1 a1
+9825 Seat characteristic, coded C 5 an..2
+C025 SEAT RANGE REQUEST DETAILS
+Function To specify a range of seats by row and column.
+9830 Seat row number C 1 n..3
+6804 Rows - number of rows C 1 n..3
+9831 Seat column C 20 an1
+C026 SEAT ADJUSTMENT DETAILS
+Function To indicate the number of seats that have been adjusted and the
+reason for the adjustment.
+9832 Seat count adjustment C 1 n..1
+9833 Reason for seat adjustment, coded C 1 an..2
+6803 Weight C 1 n..4
+C027 CHECKED BAGGAGE DETAILS
+Function To specify the number and weight of checked baggage.
+6806 Number of pieces M 1 n..3
+6803 Weight C 1 n..4
+PADIS Message Standards Document
+Version 11.1 347
+Tag Name Status Repetitions Format
+C028 HAND BAGGAGE DETAILS
+Function To specify the number and weight of hand baggage.
+6806 Number of pieces C 1 n..3
+6803 Weight C 1 n..4
+C029 BAG TAG DETAILS
+Function To identify baggage by company identification, serial numbers,
+and destination.
+3127 Carrier identification M 1 an..17
+9835 Tag serial number M 1 n..16
+9836 Number of consecutive tag serial number C 1 n..3
+3259 Place of destination, coded C 1 a..5
+3810 Airline code number C 1 n..3
+9885 Online/interline indicator C 1 n1
+C030 SSR DETAILS
+Function To specify additional requirements concerning a special
+request/requirement for a traveler.
+9837 Special service request (SSR) code M 1 a..4
+3127 Carrier identification C 1 an..17
+9839 Frequent flyer identification code C 1 an..25
+9886 Age C 1 n..2
+6806 Number of pieces C 1 n..3
+6803 Weight C 1 n..4
+4440 Free text C 1 an..70
+6353 Numeric of units qualifier C 1 an..3
+1001 Document/message name, coded C 1 an..3
+C031 ACTION DETAILS
+Function To specify procedure to be taken on data
+9858 Update action code M 1 a1
+1229 Action request / notification, coded C 9 an..3
+C032 ADDRESS DETAILS
+Function To specify passenger address information
+3299 Address purpose code C 1 an..3
+3042 Street and number/P.O. Box C 1 an..35
+3164 City name C 1 an..35
+3229 Country sub-entity identification C 1 an..9
+3228 Country sub-entity name C 1 an..35
+3207 Country, coded C 1 an..3
+3251 Postcode identification C 1 an..17
+4440 Free text C 1 an..70
+3224 Place/location C 1 an..17
+C033 UPDATE PASSENGER WEIGHT DETAILS
+Function To specify the action to be taken for a passenger's weight.
+9858 Update action code M 1 a1
+6803 Weight C 1 n..4
+PADIS Message Standards Document
+Version 11.1 348
+Tag Name Status Repetitions Format
+C034 UPDATE SEAT ADJUSTMENT DETAILS
+Function To specify the action to be taken on seat adjustment information.
+9858 Update action code M 1 a1
+9832 Seat count adjustment C 1 n..1
+9833 Reason for seat adjustment, coded C 1 an..2
+6803 Weight C 1 n..4
+C035 UPDATE CHECKED BAGGAGE DETAILS
+Function To indicate the action to be taken for the specified checked
+baggage information.
+9858 Update action code M 1 a1
+6806 Number of pieces C 1 n..3
+6803 Weight C 1 n..4
+C036 UPDATE HAND BAGGAGE DETAILS
+Function To indicate the action to be taken for the specified hand
+baggage information.
+9858 Update action code M 1 a1
+6806 Number of pieces C 1 n..3
+6803 Weight C 1 n..4
+C037 UPDATE BAG TAG DETAILS
+Function To indicate the action to be taken on the specified bag tag
+information.
+9858 Update action code M 1 a1
+3127 Carrier identification M 1 an..17
+9835 Tag serial number M 1 n..16
+9836 Number of consecutive tag serial number C 1 n..3
+3259 Place of destination, coded C 1 a..5
+3810 Airline code number C 1 n..3
+9885 Online/interline indicator C 1 n1
+C038 UPDATE SSR DETAILS
+Function To indicate the action to be taken on the specified special
+request/requirement information.
+9858 Update action code M 1 a1
+9837 Special service request (SSR) code M 1 a..4
+3127 Carrier identification C 1 an..17
+9839 Frequent flyer identification code C 1 an..25
+9886 Age C 1 n..2
+6806 Number of pieces C 1 n..3
+6803 Weight C 1 n..4
+4440 Free text C 1 an..70
+6353 Numeric of units qualifier C 1 an..3
+1001 Document/message name, coded C 1 an..3
+C039 UPDATE OSI DETAILS
+Function To indicate the action to be taken on the specified other service information.
+9858 Update action code M 1 a1
+9838 Other service information (OSI) M 1 an..250
+PADIS Message Standards Document
+Version 11.1 349
+Tag Name Status Repetitions Format
+C041 COMPLEXING FLIGHT DETAILS
+Function To specify flight number, departure and arrival locations, and
+the airline designator for a complexing flight.
+3802 Flight number M 1 n..4
+3215 Place of departure, coded M 1 a..5
+3259 Place of destination, coded M 1 a..5
+3127 Carrier identification C 1 an..17
+9801 Operational suffix to the carrier code C 1 a1
+C042 FLIGHT SERVICE DETAILS
+Function To indicate characteristics about a specific flight.
+9871 Flight service code C 4 an1
+C043 SEAT DETAILS
+Function To indicate a specific seat or an indication of freeseating on a
+means of transport.
+9809 Specific seat C 1 an..4
+9861 Freeseating reference identifier C 1 an..4
+C044 SEAT DEFINITION DETAILS
+Function To indicate all the details concerning a seat on a means of
+transport.
+9807 No smoking indicator C 1 a1
+9854 Cabin class designator C 1 a1
+9873 Cabin class of service, coded C 1 n1
+4440 Free text C 1 an..70
+3215 Place of departure, coded C 1 a..5
+3259 Place of destination, coded C 1 a..5
+7800 Equipment code C 1 an..3
+9862 Seat request fulfilled indicator C 1 a1
+9825 Seat characteristic, coded C 5 an..2
+C045 BOARDING SECURITY CODE DETAILS
+Function A sequenced collection of facetted codes used for multiple
+indexing purposes.
+9874 Passenger boarding security identifier M 2 an..5
+* 9874 Passenger boarding security identifier C 1 an..5
+C046 PASSENGER SELECTION DETAILS
+Function To identify the details required for making a passenger
+selection.
+3808 Surname M 1 a..64
+3809 Given name C 1 a..64
+9800 Reservation booking designator C 1 a1
+9824 Number of passenger in surname/family C 1 n..3
+C047 RANGE OF ROWS DETAILS
+Function To specify row information for a means of transport.
+9830 Seat row number M 1 n..3
+6804 Rows - number of rows C 1 n..3
+9831 Seat column C 20 an1
+PADIS Message Standards Document
+Version 11.1 350
+Tag Name Status Repetitions Format
+C048 CONFIGURATION DETAILS
+Function To identify the number of seats for a specific class of service.
+9854 Cabin class designator M 1 a1
+6800 Seats - number of seats C 1 n..3
+7037 Characteristic identification C 26 an..17
+C049 ROW CHARACTERISTICS DETAILS
+Function To identify the characteristics of a row on a means of
+9864 Row characteristic M 9 an..3
+* 9864 Row characteristic C 8 an..3
+C051 SEAT OCCUPATION DETAILS
+Function To identify the status of a specific seat.
+9831 Seat column M 1 an1
+9865 Seat occupation C 1 a1
+9825 Seat characteristic, coded C 38 an..2
+C052 CABIN CLASS SEAT ROW RANGE DETAILS
+Function To specify the range of rows in a particular cabin class.
+9830 Seat row number M 2 n..3
+C053 SMOKING AREA SEAT ROW RANGE DETAILS
+Function To specify the range of rows that allow smoking.
+9830 Seat row number M 2 n..3
+C054 CABIN WIDTH AND COLUMN DETAILS
+Function To specify the status of a column of seats.
+9831 Seat column M 1 an1
+9882 Column description C 2 an..2
+C055 WARNING DETAILS
+Function To identify a warning error and whether it occurred at the
+system or application level.
+9876 Processing level M 1 n1
+9845 Error/warning message number C 1 n..4
+4440 Free text C 1 an..70
+C056 ERROR INFORMATION
+Function To identify an error and whether it occurred at the system or
+application level.
+9876 Processing level M 1 n1
+9845 Error/warning message number C 1 n..4
+4440 Free text C 1 an..70
+C057 BAG TAG SELECTION DETAILS
+Function To specify the baggage to be selected.
+3127 Carrier identification M 1 an..17
+9835 Tag serial number M 1 n..16
+PADIS Message Standards Document
+Version 11.1 351
+Tag Name Status Repetitions Format
+C058 OVERWING SEAT ROW RANGE
+Function To specify the range of rows in the overwing section of an
+aircraft.
+9830 Seat row number M 2 n..3
+C058-UN NAME AND ADDRESS
+Function Unstructured name and address: one to five lines.
+3124 Name and address line M 5 an..35
+* 3124 Name and address line C 4 an..35
+C059 PLACE OF ORIGIN OF A REQUEST
+Function To indicate the originator and location of request.
+3127 Carrier identification C 1 an..17
+3800 Place of origin of business, coded C 1 a..5
+3805 Country where request originated C 1 a..2
+C059-UN STREET
+Function Street address and/or PO Box number in a structured address:
+one to three lines.
+3042 Street and number/P.O. Box M 3 an..35
+* 3042 Street and number/P.O. Box C 1 an..35
+* 3042 Street and number/P.O. Box C 1 an..35
+C060 PASSENGER API DETAILS
+Function To specify passenger information as it relates to API data
+6353 Number of units qualifier C 1 an..3
+3808 Surname C 1 a..64
+3809 Given name C 1 a..64
+9916 First date C 1 an..35
+9869 Processing status code C 1 a1
+9754 Other names C 1 an..70
+3207 Country, coded C 1 an..3
+4440 Free text C 1 an..70
+3225 Place/location identification C 1 an..25
+C080 PARTY NAME
+Function Identification of a transaction party by name, one to five lines.
+Party name may be formatted.
+3036 Party name M 5 an..35
+* 3036 Party name C 1 an..35
+* 3036 Party name C 1 an..35
+* 3036 Party name C 1 an..35
+* 3036 Party name C 1 an..35
+3045 Party name format, coded C 1 an..3
+C082 PARTY IDENTIFICATION DETAILS
+Function Identification of a transaction party by code.
+3039 Party id identification C 1 an..17
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+PADIS Message Standards Document
+Version 11.1 352
+Tag Name Status Repetitions Format
+C174 VALUE/RANGE
+Function Measurement value and relevant minimum and maximum
+tolerances in that order.
+6411 Measure unit qualifier M 1 an..3
+6314 Measurement value C 1 n..18
+6162 Range minimum C 1 n..18
+6152 Range maximum C 1 n..18
+C186 QUANTITY DETAILS
+Function Quantity information in a transaction, qualified when relevant.
+6063 Quantity qualifier M 1 an..3
+6060 Quantity M 1 n..15
+6411 Measure unit qualifier C 1 an..3
+C205 HAZARD CODE
+Function The identification of the dangerous goods in code.
+8351 Hazard code identification M 1 an..7
+8078 Hazard substance/item/page number C 1 an..7
+8092 Hazard code version number C 1 an..10
+C206 IDENTIFICATION NUMBER
+Function Goods item identification number.
+7402 Identity number M 1 an..35
+7405 Identity number qualifier C 1 an..3
+C211 DIMENSIONS
+Function Specification of the dimensions of a transportable unit.
+6411 Measure unit qualifier C 1 an..3
+6168 Length dimension C 1 n..15
+6140 Width dimension C 1 n..15
+6008 Height dimension C 1 n..15
+C212 ITEM NUMBER IDENTIFICATION
+Function Goods identification for a specified source
+7140 Item number C 1 an..35
+7143 Item number type, coded C 1 an..3
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+C220 MODE OF TRANSPORT
+Function To indicate the type of service being provided.
+8067 Mode of transport, coded M 1 an..3
+8066 Mode of transport C 1 an..17
+C224 EQUIPMENT SIZE AND TYPE
+Function Code and/or name identifying size and type of equipment used
+in transport. Code preferred.
+8155 Equipment size and type identification C 1 an..4
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+8154 Equipment size and type C 1 an..35
+PADIS Message Standards Document
+Version 11.1 353
+Tag Name Status Repetitions Format
+C235 HAZARD IDENTIFICATION
+Function Identification of the orange placard required on the means of
+transport.
+8158 Hazard identification number, upper part C 1 an..4
+8186 Substance identification number, lower part C 1 an4
+C237 EQUIPMENT IDENTIFICATION
+Function Marks (letters and/or numbers) identifying equipment used for
+transport such as a container.
+8260 Equipment identification number C 1 an..17
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+C273 ITEM DESCRIPTION
+Function Description of an item.
+7009 Item description identification C 1 an..7
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+7008 Item description C 2 an..35
+* 7008 Item description C 1 an..35
+3453 Language, coded C 1 an..3
+C280 RANGE
+Function Range minimum and maximum limits.
+6411 Measure unit qualifier C 1 an..3
+6162 Range minimum C 1 n..18
+6152 Range maximum C 1 n..18
+C300 ORIGINATOR IDENTIFICATION DETAILS
+Function To identify the originator of the travel request.
+9900 Travel agent identification details C 1 n..9
+9902 In-house identification C 3 an..9
+* 9902 In-house identification C 1 an..9
+* 9902 In-house identification C 1 an..9
+C302 MESSAGE FUNCTION/BUSINESS DETAILS
+Function To indicate the type and function of a message or part of a
+message.
+4025 Business function, coded C 1 an..3
+1225 Message function, coded C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+1225 Message function, coded1 C 20 an..3
+C304 PRODUCT DETAILS
+Function To specify availability and additional services for a product
+class.
+7037 Characteristic identification M 1 an..17
+7011 Article availability, coded C 1 an..3
+7161 Special service, coded C 1 an..3
+7009 Item description identification C 4 an..7
+PADIS Message Standards Document
+Version 11.1 354
+Tag Name Status Repetitions Format
+C306 COMPANY IDENTIFICATION
+Function Code or name to identify a company and any associated companies.
+9906 Company identification C 3 an..35
+* 9906 Company identification C 2 an..35
+C308 PRODUCT IDENTIFICATION DETAILS
+Function Code, number or name to identify a specific product or service.
+9908 Product identification M 1 an..35
+7037 Characteristic identification C 1 an..17
+9914 Product identification characteristic C 1 an..3
+7009 Item description identification C 3 an..7
+C309 PRODUCT TYPE DETAILS
+Function To specify additional characteristics of a product or service.
+1050 Sequence number M 9 an..6
+* 1050 Sequence number C 8 an..6
+C310 PRODUCT DATE/TIME
+Function To specify the dates and times associated with a product.
+9916 First date C 1 an..35
+9918 First time C 1 n..4
+9920 Second date C 1 an..35
+9922 Second time C 1 n..4
+9954 Date variation C 1 n1
+C311 MARRIAGE CONTROL DETAILS
+Function To identify details concerning the marriage status of travel
+product.
+5479 Relation coded C 1 an..3
+9995 Group number C 1 n..10
+1082 Line item number C 1 n..6
+5479 Relation coded1 C 1 an..3
+9906 Company identification C 1 an..35
+C312 CONNECTION DETAILS
+Function To specify the location, product supplier and time for a
+connection with the next means of transport.
+3225 Place/location identification C 1 an..25
+9906 Company identification C 1 an..35
+9918 First time C 1 n..4
+9922 Second time C 1 n..4
+7365 Processing indicator, coded C 1 an..3
+C314 ADDITIONAL PRODUCT DETAILS
+Function Additional details describing a specific means of transport.
+8179 Type of means of transport identification C 1 an..8
+9924 Number of stops C 1 n..3
+9926 Leg duration C 1 n..6
+5482 Percentage C 1 n..8
+9928 Days of operation C 1 an..7
+2380 Date/Time/Period C 1 an..35
+9950 Complexing flight indicator C 1 an1
+3225 Place/location identification C 3 an..25
+PADIS Message Standards Document
+Version 11.1 355
+Tag Name Status Repetitions Format
+C316 PRODUCT LOCATION DETAILS
+Function To indicate a location and the type of location.
+3225 Place/location identification C 2 an..25
+* 3225 Place/location identification C 1 an..25
+3227 Place/location qualifier C 1 an..3
+C317 MILEAGE/TIME DETAILS
+Function Information about the distance/duration of a trip.
+6314 Measurement value C 1 n..18
+6411 Measure unit qualifier C 1 an..3
+9918 First time C 1 n..4
+C318 TRAVELLER TIME DETAILS
+Function Dates and times relevant to a traveler.
+9918 First time C 1 n..4
+9922 Second time C 1 n..4
+9952 Check-in details C 1 an..10
+C320 PRODUCT FACILITIES
+Function Identification of facilities for a product or service by type or
+description.
+9932 Facility type, coded C 1 an..3
+9934 Facility description, text C 1 an..70
+9970 Product details qualifier C 1 an..3
+7037 Characteristic identification C 26 an..17
+C322 TRAVELLER SURNAME INFORMATION
+Function Identification of the surname of a traveler, the type of
+traveler, number of travelers per surname and the action to be
+taken.
+9936 Traveler surname M 1 an..70
+6353 Number of units qualifier C 1 an..3
+6060 Quantity C 1 n..15
+4405 Status, coded C 1 an..3
+PADIS Message Standards Document
+Version 11.1 356
+Tag Name Status Repetitions Format
+C323 TRAVELLER RELATED TEXT
+Function To specify a traveler reference and the related free text.
+9944 Traveler reference number C 1 an..10
+4451 Text subject qualifier C 1 an..3
+4440 Free text C 9 an..70
+C324 TRAVELLER DETAILS
+Function To identify the given/first name and the title of a traveler and
+the traveler type.
+9942 Traveler given name C 1 an..70
+6353 Number of units qualifier C 1 an..3
+9944 Traveler reference number C 1 an..10
+9946 Traveler accompanied by infant C 1 an1
+9754 Other names C 2 an..70
+C326 FREQUENT TRAVELLER IDENTIFICATION
+Function Identification of the frequent traveler number by company
+code with the capability to reference a specific traveler.
+9906 Company identification1 M 1 an..35
+9948 Frequent traveler identification code M 1 an..25
+9944 Traveler reference number C 1 an..10
+4405 Status, coded C 1 an..3
+7456 Membership level C 1 an..35
+7164 Hierarchical ID number C 1 an..12
+7008 Item description C 1 an..35
+9906 Company identification2 C 1 an..35
+9949 Passenger priority value C 1 n..4
+C328 LOCATION
+Function To identify a location by code or name.
+3225 Place/location identification C 1 an..25
+3224 Place/location C 1 an..17
+C330 RESERVATION CONTROL INFORMATION
+Function To specify the information required to identify a reservation.
+9906 Company identification C 1 an..35
+9956 Reservation control number C 1 an..20
+9958 Reservation control type C 1 an1
+9916 First date C 1 an..35
+9994 Time C 1 n..9
+C332 SPECIAL REQUIREMENTS DATA DETAILS
+Function To specify additional requirements concerning a special
+request/requirement and to reference to a traveler.
+9960 Special requirement data C 1 an..4
+6411 Measure unit qualifier C 1 an..3
+9944 Traveler reference number C 1 an..10
+9825 Seat characteristic, coded C 5 an..2
+PADIS Message Standards Document
+Version 11.1 357
+Tag Name Status Repetitions Format
+C334 SPECIAL REQUIREMENTS TYPE DETAILS
+Function To specify special requests/services, the quantity required,
+action to be taken and where the request/service should be
+administered.
+9962 Special requirement type M 1 an..4
+4405 Status, coded C 1 an..3
+6060 Quantity C 1 n..15
+9906 Company identification C 1 an..35
+7365 Processing indicator, coded C 2 an..3
+* 7365 Processing indicator, coded C 1 an..3
+3225 Place/location identification C 2 an..25
+* 3225 Place/location identification C 1 an..25
+4440 Free text C 99 an..70
+C336 SYSTEM DETAILS
+Function To identify by code or name and location the system that
+originates or delivers the message for a third party.
+9906 Company identification C 1 an..35
+3225 Place/location identification C 1 an..25
+3224 Place/location C 1 an..17
+C337 SOURCE TYPE
+Function To identify the type of source.
+7293 Sector/subject identification qualifier M 3 an..3
+* 7293 Sector/subject identification qualifier C 1 an..3
+* 7293 Sector/subject identification qualifier C 1 an..3
+C338 TRAFFIC RESTRICTION DETAILS
+Function Coded or free text details which restrict a means of transport.
+9930 Traffic restriction, coded C 1 an..3
+9968 Traffic restriction type, coded C 1 an..3
+9966 Traffic restriction qualifier, coded C 1 an..3
+4440 Free text C 1 an..70
+C340 CABIN FACILITIES DETAILS
+Function Information describing a specific area in a means of transport.
+9978 Cabin facilities characteristic M 1 an..3
+3227 Place/location qualifier C 1 an..3
+C342 CABIN CLASS DESIGNATION
+Function Product class, number, and designator which define a cabin in a
+means of transport.
+9854 Cabin class designator M 1 a1
+7037 Characteristic identification C 1 an..17
+9873 Cabin class of service, coded C 1 n1
+9992 Cabin compartment designator C 1 a1
+C344 GENERIC DETAILS
+Function To identify the type of seat requested.
+9854 Cabin class designator C 1 a1
+9807 No smoking indicator C 1 a1
+9873 Cabin class of service, coded C 1 n1
+9992 Cabin compartment designator C 1 a1
+9825 Seat characteristic, coded C 5 an..2
+PADIS Message Standards Document
+Version 11.1 358
+Tag Name Status Repetitions Format
+C346 FREE TEXT QUALIFICATION
+Function To specify the type, purpose, and language of free text and
+whether any action is required.
+4451 Text subject qualifier M 1 an..3
+9980 Information type C 1 an..4
+4405 Status, coded C 1 an..3
+9906 Company identification C 1 an..35
+3453 Language, coded C 1 an..3
+C348 STATION INFORMATION
+Function To specify departure/arrival information concerning a means
+of transport.
+9870 Gate description C 1 an..6
+3223 Related place/location one identification C 2 an..25
+* 3233 Related place/location two identification C 1 an..25
+C350 DOCUMENT DETAILS
+Function Identification of document by number, status and date.
+1004 Document/message number C 1 an..35
+4405 Status, coded C 1 an..3
+2380 Date/Time/Period C 1 an..35
+3207 Country, coded C 1 an..3
+C351 QUANTITY INFORMATION
+Function To specify the various information relating to a quantity.
+6350 Number of units C 1 n..15
+6314 Measurement value C 1 n..18
+6060 Quantity C 1 n..15
+6063 Quantity qualifier C 1 an..3
+C352 CARGO DETAILS
+Function To identify the type of cargo, related instructions and the
+status of the cargo.
+7085 Nature of cargo, coded C 1 an..3
+4079 Handling instructions, coded C 1 an..3
+4405 Status, coded C 1 an..3
+C353 LOAD DETAILS
+Function Specifications of the dimensions of a load.
+6313 Measurement dimension, coded C 1 an..3
+6411 Measure unit qualifier C 1 an..3
+6314 Measurement value C 1 n..18
+6321 Measurement significance, coded C 1 an..3
+8169 Full/empty indicator, coded C 1 an..3
+C354 ORIGINATOR DETAILS
+Function Characteristics of the originator of a request.
+3207 Country, coded C 1 an..3
+6345 Currency, coded C 1 an..3
+3453 Language, coded C 1 an..3
+PADIS Message Standards Document
+Version 11.1 359
+Tag Name Status Repetitions Format
+C355 PROCESSING DETAILS
+Function To provide information of how the processing is to be done.
+7365 Processing indicator, coded M 1 an..3
+4405 Status, coded C 1 an..3
+4440 Free text C 999 an..70
+C356 BAGGAGE STATUS DETAILS
+Function To identify a printer I.D. and a cabin class.
+9854 Cabin class designator C 1 a1
+8260 Equipment identification number C 1 an..17
+1245 Status indicator, coded C 2 an..3
+C358 BAGTAG DETAILS
+Function To identify baggage by company identification, serial numbers,
+and destination.
+9906 Company identification C 1 an..35
+7140 Item number C 1 an..35
+7240 Total number of items C 1 n..15
+3225 Place/location identification C 1 an..25
+9996 Company identification number C 1 an..15
+9988 Data indicator C 1 an..3
+7081 Item characteristic, coded C 1 an..3
+9962 Special requirement type C 1 an..4
+6314 Measurement value C 1 n..18
+6411 Measure unit qualifier C 1 an..3
+4440 Free text C 1 an..70
+C359 EQUIPMENT INFORMATION
+Function To provide equipment and service information.
+8067 Mode of transport, coded M 1 an..3
+8179 Type of means of transport identification M 1 an..8
+7011 Article availability, coded M 1 an..3
+9984 Type of call at port C 1 n..3
+C360 EQUIPMENT IDENTIFICATION
+Function To indicate the type of vehicle being used.
+8179 Type of means of transport identification M 1 an..8
+9914 Product identification characteristic C 1 an..3
+8212 Id of the means of transport C 1 an..17
+8260 Equipment identification number C 1 an..17
+C361 ADDITIONAL EQUIPMENT INFORMATION
+Function To identify equipment configuration, registration number, and
+cabin facilities.
+9866 Aircraft cabin version identification1 C 1 an..12
+9866 Aircraft cabin version identification2 C 1 an..12
+9906 Company identification C 1 an..35
+8260 Equipment identification number C 1 an..17
+9978 Cabin facilities characteristic C 2 an..3
+PADIS Message Standards Document
+Version 11.1 360
+Tag Name Status Repetitions Format
+C362 TIME INFORMATION
+Function To indicate time and time variation information.
+9918 First time M 1 n..4
+9922 Second time C 1 n..4
+9986 UTC/local time variation C 1 n4
+9954 Date variation C 1 n1
+C366 TERMINAL INFORMATION
+Function To indicate the terminal being used.
+3223 Related place/location one identification C 2 an..25
+C368 ON-TIME PERFORMANCE
+Function To provide punctuality performance information.
+2380 Date/Time/Period M 1 an..35
+5482 Percentage C 1 n..8
+5245 Percentage qualifier C 1 an..3
+C369 REASON INFORMATION
+Function To provide reason information.
+9013 Status reason, coded M 9 an..3
+* 9013 Status reason, coded C 8 an..3
+C370 PORT OF CALL DETAILS
+Function To provide information related to arrival/departure at a port.
+9984 Type of call at port C 1 n..3
+9982 Restricted payload C 1 an..17
+9417 Government action, coded C 1 an..3
+C374 COMPANY ROLE IDENTIFICATION
+Function To indicate commercial agreements related to the service being
+provided.
+8051 Transport stage qualifier M 1 an..3
+9906 Company identification M 1 an..35
+9908 Product identification C 1 an..35
+9914 Product identification characteristic C 1 an..3
+C502 MEASUREMENT DETAILS
+Function Identification of measurement type.
+6313 Measurement dimension, coded C 1 an..3
+6321 Measurement significance, coded C 1 an..3
+6155 Measurement attribute, coded C 1 an..3
+C507 DATE/TIME/PERIOD
+Function To indicate period of applicability.
+2005 Date/Time/Period qualifier M 1 an..3
+2380 Date/Time/Period C 1 an..35
+2379 Date/time/period format qualifier C 1 an..3
+PADIS Message Standards Document
+Version 11.1 361
+Tag Name Status Repetitions Format
+C517 LOCATION IDENTIFICATION
+Function To specify location.
+3225 Place/location identification M 1 an..25
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+3224 Place/location C 1 an..17
+C523 NUMBER OF UNIT DETAILS
+Function Identification of number of units and its purpose.
+6350 Number of units C 1 n..15
+6353 Number of units qualifier C 1 an..3
+C640 COUPON INFORMATION
+Function To specify the coupon number, status, value, and other related
+information.
+1050 Sequence number C 1 an..6
+4405 Status, coded1 C 1 an..3
+5004 Monetary amount C 1 n..18
+1159 Sequence number source, coded C 1 an..3
+9887 Control identification C 1 an..35
+1245 Status indicator, coded C 1 an..3
+4405 Status, coded2 C 1 an..3
+1050 Sequence number1 C 1 an..6
+1154 Reference number C 1 an..35
+1229 Action request/notification C 1 an..3
+C641 FORM OF PAYMENT DETAILS
+Function To specify the form of payment type, amounts, approval
+codes, and other related information.
+9888 Form of payment identification M 1 an..10
+9988 Data indicator C 1 an..3
+5004 Monetary amount1 C 1 n..18
+9906 Company identification C 1 an..35
+1154 Reference number C 1 an..35
+9916 First date C 1 an..35
+9889 Approval identification C 1 an..17
+9890 Source, coded C 1 an..3
+5004 Monetary amount2 C 1 n..18
+9891 Verification, coded C 1 an..3
+3194 Account holder number C 1 an..35
+2475 Payment time reference, coded C 1 an..3
+4440 Free text C 1 an..70
+7453 Membership status, coded C 1 an..3
+9892 Transaction information C 1 an..35
+C642 INTERNAL IDENTIFICATION DETAILS
+Function To specify an internal identification and the type of
+identification.
+9902 In-house identification M 1 an..9
+9893 Identification type, coded C 1 an..3
+9900 Travel agent identification details C 1 n..9
+PADIS Message Standards Document
+Version 11.1 362
+Tag Name Status Repetitions Format
+C643 RATE/TARIFF CLASS INFORMATION
+Function To identify the current and/or original fare basis code.
+5242 Rate/Tariff class1 C 1 an..35
+9988 Data indicator1 C 1 an..3
+5242 Rate/Tariff class2 C 1 an..35
+9988 Data indicator2 C 1 an..3
+5242 Rate/Tariff class3 C 1 an..35
+9988 Data indicator3 C 1 an..3
+5242 Rate/Tariff class4 C 1 an..35
+9988 Data indicator4 C 1 an..3
+5242 Rate/Tariff class5 C 1 an..35
+9988 Data indicator5 C 1 an..3
+5242 Rate/Tariff class6 C 1 an..35
+9988 Data indicator6 C 1 an..3
+5242 Rate/Tariff class7 C 1 an..35
+9988 Data indicator7 C 1 an..3
+5242 Rate/Tariff class8 C 1 an..35
+9988 Data indicator8 C 1 an..3
+5242 Rate/Tariff class9 C 1 an..35
+9988 Data indicator9 C 1 an..3
+C644 FARE TYPE GROUPING INFORMATION
+Function To designate system specific combinations of fare types and
+fare groupings
+5388 Pricing Group C 5 an..35
+C645 FARE QUALIFIER INFORMATION
+Function To specify multiple qualifier for fare selections.
+9910 Fare qualifier C 3 an..3
+C646 ADDITIONAL FARE QUALIFIER DETAILS
+Function To specify the fare basis and ticket designator codes.
+5242 Rate/Tariff class C 1 an..35
+7357 Commodity/rate identification C 1 an..18
+5388 Pricing Group C 1 an..35
+5242 Rate/Tariff class1 C 29 an..35
+C647 FARE CATEGORY CODES
+Function To designate non-system specific combinations of fare types.
+5263 Rate type identification M 9 an..20
+* 5263 Rate type identification C 8 an..20
+C648 DISCOUNT/PENALTY INFORMATION
+Function To indicate the discounts and penalties by fare type.
+9910 Fare qualifier M 1 an..3
+5004 Monetary amount C 1 n..18
+5482 Percentage C 1 n..8
+PADIS Message Standards Document
+Version 11.1 363
+Tag Name Status Repetitions Format
+C649 DISCOUNT/PENALTY MONETARY INFORMATION
+Function To specify the type of discount and penalty information, the
+monetary amount, and associated information.
+5007 Monetary function, coded C 1 an..3
+5025 Monetary amount type qualifier C 1 an..3
+5004 Monetary amount C 1 n..18
+5242 Rate/Tariff class C 1 an..35
+6345 Currency, coded C 1 an..3
+C650 PRODUCT/ACCOUNT DETAILS
+Function To specify frequent traveler card information.
+7143 Item number type, coded C 1 an..3
+9948 Frequent traveler identification code M 1 an..25
+5243 Rate/tariff class identification C 1 an..9
+1050 Sequence number C 1 an..6
+4000 Reference version number C 1 an..35
+5242 Rate/Tariff class C 1 an..35
+9889 Approval identification C 1 an..17
+C651 VALID DATE INFORMATION
+Function To specify validity information.
+9916 First date C 1 an..35
+9920 Second date C 1 an..35
+C652 ACCOUNT HOLDER INFORMATION
+Function To specify frequent traveler cardholder information.
+9936 Traveler surname C 1 an..70
+9942 Traveler given name C 1 an..70
+3432 Institution name C 1 an..70
+C653 REFERENCING DETAILS
+Function To provide reference identification.
+1153 Reference qualifier C 1 an..3
+1154 Reference number C 1 an..35
+C654 INSTRUCTION INFORMATION
+Function To specify the status and level of the application/product.
+4401 Instruction, coded C 1 an..3
+4403 Instruction qualifier C 1 an..3
+C655 MESSAGE/APPLICATION/PRODUCT INFORMATION
+Function To specify information related to the application/product.
+1225 Message function, coded C 1 an..3
+9755 Application identification C 1 an..17
+9756 Application identification qualifier C 1 an..3
+3207 Country, coded C 1 an..3
+9916 First date C 1 an..35
+9920 Second date C 1 an..35
+6350 Number of units C 1 n..15
+PADIS Message Standards Document
+Version 11.1 364
+Tag Name Status Repetitions Format
+C656 STATUS DETAILS
+Function To specify a status, the action to be taken, and an additional
+qualification of the status.
+1245 Status indicator, coded C 1 an..3
+1229 Action request / notification, coded C 1 an..3
+9015 Status type, coded C 1 an..3
+4440 Free text C 1 an..70
+C657 QUANTITY AND ACTION DETAILS
+Function To identify an item, a quantity for the item, and action to be
+taken.
+6060 Quantity C 1 n..15
+9750 Option C 1 an..3
+1229 Action request / notification, coded C 1 an..3
+C658 DATA TYPE INFORMATION
+Function To identify the type of data to be sent and to qualify the data
+when required.
+9989 Data type, coded M 1 an..3
+9011 Status event, coded C 1 an..3
+C659 DATA INFORMATION
+Function To identify specific data and a quantity related to the data.
+9988 Data indicator C 1 an..3
+6060 Quantity C 1 n..15
+6411 Measure unit qualifier C 1 an..3
+4440 Free text C 1 an..70
+C660 SELECTION DETAILS INFORMATION
+Function To specify a selected option and associated information.
+9750 Option M 1 an..3
+9749 Associated option information C 1 an..35
+C661 CONVERSION RATE DETAILS
+Function To specify the conversion rate and the monetary amount.
+9875 Conversion type, coded C 1 an..3
+6345 Currency, coded C 1 an..3
+5419 Rate type qualifier C 1 an..3
+5004 Monetary amount1 C 1 n..18
+5004 Monetary amount2 C 1 n..18
+5153 Duty/Tax fee type, coded C 1 an..3
+6314 Measurement value C 1 n..18
+6321 Measurement significance, coded C 1 an..3
+C662 FARE DETAILS
+Function To specify the fare type and related information.
+6353 Number of units qualifier C 1 an..3
+5482 Percentage C 1 n..8
+3207 Country coded C 1 an..3
+9878 Fare classification type, coded C 1 an..3
+PADIS Message Standards Document
+Version 11.1 365
+Tag Name Status Repetitions Format
+C663 MONETARY INFORMATION
+Function To specify the type of monetary amount, the amount, and the
+currency code.
+5025 Monetary amount type qualifier M 1 an..3
+1230 Allowance or charge number C 1 an..35
+6345 Currency coded C 1 an..3
+3225 Place/location identification C 2 an..25
+C664 PRICING/TICKETING INFORMATION
+Function To specify indicators related to pricing and ticketing.
+5387 Price type qualifier C 30 an..3
+C665 COMPANY IDENTIFICATION NUMBERS
+Function Number to identify a company and any associated companies.
+9996 Company identification number M 2 an..15
+* 9996 Company identification number C 1 an..15
+C666 LOCATION DETAILS
+Function To specify a location and related country.
+3225 Place/location identification C 1 an..25
+3207 Country, coded C 1 an..3
+C667 TICKET NUMBER DETAILS
+Function To specify a ticket number, type of ticket, and related
+information.
+1004 Document/message number C 1 an..35
+1001 Document/message name, coded C 1 an..3
+7240 Total number of items C 1 n..15
+9988 Data indicator C 1 an..3
+1229 Action request / notification, coded C 1 an..3
+* 1004 Document/message number C 1 an..35
+C668 TAX DETAILS
+Function To specify a rate, type of tax, and currency code.
+5278 Duty/tax/fee rate1 C 1 an..17
+3207 Country, coded C 1 an..3
+6345 Currency, coded C 1 an..3
+5153 Duty/Tax fee type coded1 C 1 an..3
+5278 Duty/Tax/fee rate2 C 1 an..17
+6345 Currency, code C 1 an..3
+5153 Duty/tax/fee type coded2 C 1 an..3
+5004 Monetary amount C 1 n..18
+5007 Monetary function coded C 2 an..3
+C669 MULTIPLE IDENTIFICATION NUMBERS
+Function To specify more than one identification number.
+7402 Identity number M 3 an..35
+* 7402 Identity number C 2 an..35
+PADIS Message Standards Document
+Version 11.1 366
+Tag Name Status Repetitions Format
+C670 REFERENCE QUALIFICATION
+Function To identify the owner of a reference and the type of reference.
+7405 Identity number qualifier C 1 an..3
+1153 Reference qualifier C 1 an..3
+C671 TRAVELLER IDENTIFICATION
+Function To specify additional details to identify a traveler.
+1154 Reference number M 1 an..35
+1153 Reference qualifier C 1 an..3
+9809 Specific seat C 1 an..4
+9944 Traveler reference number C 1 an..10
+C672 PROCESSING INFORMATION
+Function To identify the action to be taken and the selection criteria.
+1225 Message function, coded C 1 an..3
+1153 Reference qualifier C 1 an..3
+1050 Sequence number C 1 an..6
+C673 REFERENCE
+Function To specify which number in a sequence of references and/or the
+reference number.
+1050 Sequence number C 1 an..6
+1154 Reference number C 99 an..35
+C674 EXCESS BAGGAGE DETAILS
+Function To specify details concerning a traveler’s excess baggage.
+6345 Currency, coded C 1 an..3
+5004 Monetary amount C 1 n..18
+7365 Processing indicator, coded C 1 an..3
+C675 BAGGAGE DETAILS
+Function To specify the number and weight of baggage.
+6060 Quantity C 1 n..15
+6314 Measurement value C 1 n..18
+5463 Allowance or charge qualifier C 1 an..3
+6411 Measure unit qualifier C 1 an..3
+7365 Processing indicator, coded C 1 an..3
+C676 MESSAGE CONDITIONS
+Function To specify additional details concerning the processing of the
+data in the message.
+3153 Communication channel identifier, coded C 1 an..3
+6350 Number of units C 1 n..15
+7365 Processing indicator, coded C 2 an..3
+* 7365 Processing indicator, coded C 1 an..3
+6411 Measure unit qualifier C 1 an..3
+7240 Total number of items C 1 n..15
+5479 Relation, coded C 9 an..3
+PADIS Message Standards Document
+Version 11.1 367
+Tag Name Status Repetitions Format
+C677 MESSAGE EQUIPMENT DETAILS
+Function To identify information concerning the equipment available
+for processing the response data.
+8053 Equipment qualifier M 1 an..3
+8249 Equipment status, coded C 1 an..3
+8155 Equipment size and type identification C 1 an..4
+C678 SEGMENT REPETITION CONTROL DETAILS
+Function Information about the number of selection segments to be
+processed.
+6060 Quantity C 1 n..15
+6350 Number of units C 1 n..15
+7240 Total number of items C 1 n..15
+C679 SPECIFIC SEAT DETAILS
+Function Identification of specific seats on a means of transport.
+9809 Specific seat C 99 an..4
+C680 SEAT CHARACTERISTIC DETAILS
+Function Identification of the characteristics of a seat on a means of
+transport.
+9825 Seat characteristic, coded C 99 an..2
+C681 SEAT RANGE DETAILS
+Function To specify the range of seats on a means of transport.
+9830 Seat row number M 1 n..3
+6152 Range maximum C 1 n..18
+9831 Seat column C 1 an1
+C682 SECURITY IDENTIFICATION DETAILS
+Function Identification of the security required.
+9751 Security identification C 2 an..5
+C683 SPECIFIC SEAT PURPOSE
+Function To identify the purpose of a specific seat on a means of
+transport.
+7081 Item characteristic, coded C 1 an..3
+9809 Specific seat C 1 an..4
+C684 SPECIFIC TRAVELLER DETAILS
+Function To specify additional details about a particular traveler.
+9944 Traveler reference number C 1 an..10
+6314 Measurement value C 1 n..18
+9916 First date C 1 an..35
+9936 Traveler surname C 1 an..70
+9942 Traveler given name C 1 an..70
+PADIS Message Standards Document
+Version 11.1 368
+Tag Name Status Repetitions Format
+C686 BAGGAGE REFERENCE DETAILS
+Function To specify additional information concerning baggage.
+7365 Processing indicator, coded C 1 an..3
+7402 Identity number C 1 an..35
+C687 CLASS INFORMATION
+Function Identification of a class of service.
+7037 Characteristic identification C 1 an..17
+9873 Cabin class of service, coded C 1 n1
+C688 DATE AND TIME DETAILS
+Function To provide date and time details relative to flight movements.
+2005 Date/Time/Period qualifier1 C 1 an..3
+9916 First date1 C 1 an..35
+9918 First time1 C 1 n..4
+2005 Date/Time/Period qualifier2 C 1 an..3
+9918 First time2 C 1 n..4
+8335 Movement type, coded C 1 an..3
+3225 Place/location identification C 1 an..25
+C689 TRAVELLER INDICATORS
+Function Specification of codes that apply to a traveler.
+1245 Status indicator, coded M 9 an..3
+* 1245 Status indicator, coded C 8 an..3
+C690 PAX ID DETAILS IN QUERYING SYSTEM
+Function To specify unique passenger references in querying system.
+9821 Unique passenger reference M 2 an..10
+* 9821 Unique passenger reference C 1 an..10
+C691 PAX ID DETAILS IN THIRD PARTY SYSTEM
+Function To specify unique passenger references in third party system.
+9821 Unique passenger reference M 2 an..10
+* 9821 Unique passenger reference C 1 an..10
+C692 PAX ID DETAILS IN RESPONDING SYSTEM
+Function To specify unique passenger references in responding system.
+9821 Unique passenger reference M 2 an..10
+* 9821 Unique passenger reference C 1 an..10
+C693 BAGTAG STUB INFORMATION
+Function To specify details imprinted onto the baggage tag stub.
+3127 Carrier identification M 1 an..17
+3802 Flight number M 1 n..4
+2281 Departure date and time M 1 n..10
+3259 Place of destination, coded M 1 a..5
+9800 Reservation booking designator C 1 a1
+9801 Operational suffix to the carrier code C 1 a1
+PADIS Message Standards Document
+Version 11.1 369
+Tag Name Status Repetitions Format
+C694 BAG POOL REFERENCE
+Function To specify baggage pool details.
+9858 Update action code M 1 a1
+7365 Processing indicator, coded C 1 an..3
+7402 Identity number C 1 an..35
+C695 UPDATE BAGTAG STUB INFORMATION
+Function To specify update details imprinted onto the baggage tag.
+9858 Update action code M 1 a1
+3127 Carrier identification M 1 an..17
+3802 Flight number M 1 n..4
+2281 Departure date and time M 1 n..10
+3259 Place of destination, coded M 1 a..5
+9800 Reservation booking designator C 1 a1
+9801 Operational suffix to the carrier code C 1 a1
+C696 HOST DEFINITION
+Function To specify host details.
+9803 Host qualifier M 1 a1
+9804 Host definition numeric C 1 n1
+3127 Carrier identification C 1 an..17
+C700 DOCUMENT ID
+Function To specify document information as it is related to API data.
+7365 Processing indicator, coded C 1 an..3
+1004 Document/message number C 1 an..35
+3207 Country, coded C 1 an..3
+9813 Confirmation indicator C 1 a1
+4440 Free text C 1 an..70
+2380 Date/Time/Period1 C 1 an..35
+6353 Number of units qualifier C 1 an..3
+9890 Source, coded C 1 an..3
+3228 Country sub-entity name C 1 an..35
+3164 City name C 1 an..35
+3036 Party name C 1 an..35
+2380 Date/Time/Period2 C 1 an..35
+3808 Surname C 1 a..64
+3809 Given name C 1 a..64
+9754 Other names C 1 an..70
+9813 Confirmation indicator1 C 9 a1
+3224 Place/location C 1 an..17
+C701 PASSENGER CONTACT DATA
+Function To specify passenger API information
+3808 Surname C 1 a..64
+3809 Given name C 1 a..64
+3148 Communication number C 1 an..25
+4440 Free text C 1 an..70
+PADIS Message Standards Document
+Version 11.1 370
+Tag Name Status Repetitions Format
+C901 APPLICATION ERROR DETAIL
+Function Code assigned by the recipient of a message to indicate a data
+validation error condition.
+9321 Application error, coded M 1 an..3
+1131 Code list qualifier C 1 an..3
+3055 Code list responsible agency, coded C 1 an..3
+C957 COMMISSION DETAILS
+Function To specify the commission conditions, amount, currency,
+party paying and any related free text.
+4439 Payment conditions, coded M 1 an..3
+5004 Monetary amount C 1 n..18
+6345 Currency, coded C 1 an..3
+3036 Party name C 1 an..35
+4440 Free text C 1 an..70
+C959 SERVICE DATE, TIME, LOCATION INFORMATION
+Function To specify the reserved date, starting time, ending time and
+location information, in this sequence, related to a service.
+7161 Special service, coded M 1 an..3
+9918 First time C 1 n..4
+9922 Second time C 1 n..4
+9916 First date C 1 an..35
+3224 Place/location C 1 an..17
+C967 CONSUMER REFERENCE IDENTIFICATION
+Function Identification of consumer references by type, company,
+number and reference to a traveler.
+1153 Reference qualifier M 1 an..3
+1154 Reference number C 1 an..35
+3036 Party name C 1 an..35
+9944 Traveler reference number C 1 an..10
+C977 PAYMENT DETAILS
+Function To identify the method, type, amount, currency and due date
+of payment.
+5903 Form of payment identification M 1 an..4
+5905 Payment type identification C 1 an..4
+5909 Service to be paid, coded C 1 an..3
+5004 Monetary amount C 1 n..18
+6345 Currency, coded C 1 an..3
+1154 Reference number C 1 an..35
+9916 First date C 1 an..35
+3225 Place/location identification C 1 an..25
+PADIS Message Standards Document
+Version 11.1 371
+Tag Name Status Repetitions Format
+C978 CREDIT CARD INFORMATION
+Function To identify the relevant information of a credit card and relate
+it to a traveler.
+3036 Party name M 1 an..35
+1154 Reference number C 1 an..35
+9916 First date C 1 an..35
+3901 Bank identification C 1 an..4
+9944 Traveler reference number C 1 an..10
+C980 FARE COMPONENT DETAILS
+Function To specify fare component details.
+9988 Data indicator C 1 an..3
+6060 Quantity C 1 n..15
+9916 First date C 1 an..35
+5388 Pricing group C 1 an..35
+5242 Rate/tariff class C 1 an..35
+C981 CORPORATE FARE INFORMATION
+Function To specify corporate fare information.
+9910 Fare qualifier C 1 an..3
+7402 Identify number C 20 an..35
+C982 TARIFF INFORMATION
+Function To identify the rates or tariff details.
+5907 Rate type identification C 1 an..20
+5004 Monetary amount C 1 n..18
+6345 Currency, coded C 1 an..3
+5911 Rate plan, coded C 1 an..3
+5025 Monetary amount type qualifier C 1 an..3
+2152 Number of periods C 1 n..3
+5377 Price change indicator, coded C 1 an..3
+5906 Total monetary amount C 1 n..20
+9916 First date C 1 an..35
+9920 Second date C 1 an..35
+C983 RATE INFORMATION
+Function To identify the rate or tariff categories and rate or tariff
+5243 Rate/tariff class identification C 1 an..9
+6162 Range minimum C 1 n..18
+6152 Range maximum C 1 n..18
+C984 ASSOCIATED CHARGES INFORMATION
+Function Identification of the additional charges that are associated to a
+product or service.
+5901 Charge unit, coded C 1 an..3
+5004 Monetary amount C 1 n..18
+7008 Item description C 1 an..35
+6060 Quantity C 1 n..15
+2901 Charge period type, coded C 1 an..3
+6345 Currency, coded C 1 an..3
+3225 Place/location identification C 1 an..25
+4440 Free text C 1 an..70
+PADIS Message Standards Document
+Version 11.1 372
+Tag Name Status Repetitions Format
+C986 QUEUE INFORMATION DETAILS
+Function To identify the name of the queue, position of items, count,
+maximum items allowed, status and related queues.
+7009 Item description identification C 1 an..7
+7008 Item description C 1 an..35
+9143 Relationship, coded C 1 an..3
+7240 Total number of items C 1 n..15
+6176 Maximum number of occurrences C 1 n..7
+4405 Status, coded C 1 an..3
+7009 Item description identification C 15 an..7
+C988 SUB QUEUE INFORMATION DETAILS
+Function To identify the name of the sub queue, count, maximum items
+allowed and status.
+9893 Identification type, coded C 1 an..3
+7140 Item number C 1 an..35
+7240 Total number of items C 1 n..15
+6176 Maximum number of occurrences C 1 n..7
+4405 Status, coded C 1 an..3
+7008 Item description C 1 an..35
+C991 VEHICLE INFORMATION
+Function To identify a vehicle by make or model and vehicle
+identification number.
+8154 Equipment size and type C 1 an..35
+7402 Identity number C 1 an..35
+C992 POSITION
+Function To identify the position of an item.
+3223 Related place/location one identification C 2 an..25
+* 3223 Related place/location one identification C 1 an..25
+C993 TOUR DETAILS
+Function To provide details of a tour by code, name of the tour
+provider, length, number of stops, room occupancy and number
+9908 Product identification C 1 an..35
+3036 Party name C 1 an..35
+6168 Length dimension C 1 n..15
+9924 Number of stops C 1 n..3
+9928 Days of operation C 1 an..7
+6350 Number of units C 1 n..15
+6060 Quantity C 1 n..15
+C994 STOPOVER INFORMATION
+Function To specify location of and number of nights at a stopover.
+3225 Place/location identification C 1 an..25
+6350 Number of units C 1 n..15
+PADIS Message Standards Document
+Version 11.1 373
+Tag Name Status Repetitions Format
+C997 ACCOMMODATION ALLOCATION INFORMATION
+Function To specify references, type and characteristics of
+accommodations allocated.
+1154 Reference number M 1 an..35
+9143 Relationship, coded M 1 an..3
+7904 Accommodation type C 1 an..10
+7907 Characteristic, coded C 1 an..3
+9960 Special requirement data C 99 an..4
+C998 DISCOUNT INFORMATION
+Function To specify the reason for, amount, the company granting, and
+a number related to the reason for a discount.
+4465 Adjustment reason, coded M 1 an..3
+5482 Percentage C 1 n..8
+3036 Party name C 1 an..35
+6350 Number of units C 1 n..15
+CXXX FARE COMPONENT DETAILS
+Function To specify fare component details.
+9988 Data indicator C 1 an..3
+6060 Quantity C 1 n.. 15
+9916 First date C 1 an..35
+5388 Pricing group C 1 an..35
+5242 Rate/tariff class C 1 an..35
+S002 INTERCHANGE SENDER
+Function Identification of the sender of the interchange
+0004 Sender identification M 1 an..35
+0007 Partner identification code qualifier C 1 an..4
+0008 Address for reverse routing C 1 an..14
+S003 INTERCHANGE RECIPIENT
+Function Identification of the recipient of the interchange
+0010 Recipient identification M 1 an..35
+0007 Partner identification code qualifier C 1 an..4
+0014 Routing address C 1 an..14
+S009 MESSAGE IDENTIFIER
+Function Identification of the type, version etc. of the message being
+interchanged.
+0065 Message type M 1 an..6
+0052 Message type version number M 1 an..3
+0054 Message type release number M 1 an..3
+0051 Controlling agency, coded M 1 an..3
+0057 Association assigned code C 1 an..6
+S010 STATUS OF THE TRANSFER
+Function Identifies the sequence of the message within the sender's
+interchange and the position in a multi-message transmission.
+0070 Sequence of transfers M 1 n..2
+0073 First and last transfer C 1 a1
+PADIS Message Standards Document
+Version 11.1 374
+Tag Name Status Repetitions Format
+S011 DATA ELEMENT IDENTIFICATION
+Function Identification of the position for an erroneous data element.
+This can be the position of a simple or composite data element
+in the definition of a segment or a component data element in
+the definition a composite data element.
+0098 Erroneous data element position in segment M 1 n..3
+0104 Erroneous component data element position C 1 n..3
+S300 DATE AND/OR TIME OF INITIATION
+Function Date and time of initiation of each dialogue, message or status
+report.
+0339 Date, extended C 1 n..8
+0314 Event time C 1 an..15
+0337 Time offset C 1 n4
+S301 STATUS OF TRANSFER - INTERACTIVE
+Function Identifies the sequence of the message within the sender's
+interchange and the position in a multi-message transmission.
+0320 Message sequence number C 1 n..6
+0323 Message position, coded C 1 a1
+0325 Duplicate indicator C 1 a1
+S302 DIALOGUE REFERENCE
+Function Unique reference for the dialogue between co-operating parties
+within the interactive EDI transaction.
+0300 Initiator control reference M 1 an..35
+0303 Initiator reference identification C 1 an..35
+0051 Controlling agency, coded C 1 an..3
+0304 Responder control reference C 1 an..35
+S306 INTERACTIVE MESSAGE IDENTIFIER
+Function Identification of the type, version and details of the message
+being interchanged.
+0065 Message type M 1 an..6
+0312 Version number M 1 an..3
+0316 Release number M 1 an..3
+0326 Message function C 1 an..6
+0051 Controlling agency, coded C 1 an..3
+0057 Association assigned code C 1 an..6

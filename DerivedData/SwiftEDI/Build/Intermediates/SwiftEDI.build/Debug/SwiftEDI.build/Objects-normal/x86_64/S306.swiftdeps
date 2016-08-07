@@ -1,0 +1,61 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "S306"
+provides-nominal:
+- "C8SwiftEDI4S306"
+provides-member:
+- ["C8SwiftEDI4S306", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Composite"
+- "String"
+- "S306"
+- "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "associationAssignedCode_0057"]
+- ["Ps9AnyObject", "controllingAgencyCoded_0051"]
+- !private ["Ps9AnyObject", "descEDI"]
+- ["Ps9AnyObject", "descriptionComp"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "messageFunction_0326"]
+- ["Ps9AnyObject", "messageType_0065"]
+- ["Ps9AnyObject", "releaseNumber_0316"]
+- ["Ps9AnyObject", "versionNumber_0312"]
+- ["Ps9AnyObject", ""]
+- ["C8SwiftEDI9Composite", "String"]
+- ["C8SwiftEDI9Composite", "associationAssignedCode_0057"]
+- ["C8SwiftEDI9Composite", "controllingAgencyCoded_0051"]
+- !private ["C8SwiftEDI9Composite", "descEDI"]
+- ["C8SwiftEDI9Composite", "descriptionComp"]
+- ["C8SwiftEDI9Composite", "init"]
+- ["C8SwiftEDI9Composite", "messageFunction_0326"]
+- ["C8SwiftEDI9Composite", "messageType_0065"]
+- ["C8SwiftEDI9Composite", "releaseNumber_0316"]
+- ["C8SwiftEDI9Composite", "versionNumber_0312"]
+- ["C8SwiftEDI9Composite", ""]
+- ["C8SwiftEDI4S306", "String"]
+- ["C8SwiftEDI4S306", "associationAssignedCode_0057"]
+- ["C8SwiftEDI4S306", "controllingAgencyCoded_0051"]
+- ["C8SwiftEDI4S306", "deinit"]
+- !private ["C8SwiftEDI4S306", "descEDI"]
+- ["C8SwiftEDI4S306", "descriptionComp"]
+- ["C8SwiftEDI4S306", "init"]
+- ["C8SwiftEDI4S306", "messageFunction_0326"]
+- ["C8SwiftEDI4S306", "messageType_0065"]
+- ["C8SwiftEDI4S306", "releaseNumber_0316"]
+- ["C8SwiftEDI4S306", "versionNumber_0312"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C8SwiftEDI9Composite"
+- "C8SwiftEDI4S306"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/larryEmcgee/StanfordUniversity/SwiftEDI/SwiftEDI-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+interface-hash: "e6fc7e1ec4f6d633db53497ce2f09c7e"

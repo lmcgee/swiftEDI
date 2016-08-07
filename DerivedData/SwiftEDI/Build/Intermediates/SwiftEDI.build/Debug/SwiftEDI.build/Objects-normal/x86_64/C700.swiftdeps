@@ -1,0 +1,149 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "C700"
+provides-nominal:
+- "C8SwiftEDI4C700"
+provides-member:
+- ["C8SwiftEDI4C700", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Composite"
+- "String"
+- "C700"
+- "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "cityName_3164"]
+- ["Ps9AnyObject", "confirmationIndicator1_9813"]
+- ["Ps9AnyObject", "confirmationIndicator_9813"]
+- ["Ps9AnyObject", "countryCoded_3207"]
+- ["Ps9AnyObject", "countrySubEntityName_3228"]
+- ["Ps9AnyObject", "dateTimePeriod1_2380"]
+- ["Ps9AnyObject", "dateTimePeriod2_2380"]
+- !private ["Ps9AnyObject", "descEDI"]
+- ["Ps9AnyObject", "descriptionComp"]
+- ["Ps9AnyObject", "documentMessageNumber_1004"]
+- !private ["Ps9AnyObject", "enderFix"]
+- ["Ps9AnyObject", "freeText_4440"]
+- ["Ps9AnyObject", "givenName_3809"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numberOfUnitsQualifier_6353"]
+- ["Ps9AnyObject", "otherNames_9754"]
+- ["Ps9AnyObject", "partyName_3036"]
+- ["Ps9AnyObject", "placeLocation_3224"]
+- ["Ps9AnyObject", "processingIndicatorCoded_7365"]
+- ["Ps9AnyObject", "sourceCoded_9890"]
+- ["Ps9AnyObject", "surname_3808"]
+- ["Ps9AnyObject", ""]
+- ["C8SwiftEDI4C700", "String"]
+- ["C8SwiftEDI4C700", "cityName_3164"]
+- ["C8SwiftEDI4C700", "confirmationIndicator1_9813"]
+- ["C8SwiftEDI4C700", "confirmationIndicator_9813"]
+- ["C8SwiftEDI4C700", "countryCoded_3207"]
+- ["C8SwiftEDI4C700", "countrySubEntityName_3228"]
+- ["C8SwiftEDI4C700", "dateTimePeriod1_2380"]
+- ["C8SwiftEDI4C700", "dateTimePeriod2_2380"]
+- ["C8SwiftEDI4C700", "deinit"]
+- !private ["C8SwiftEDI4C700", "descEDI"]
+- ["C8SwiftEDI4C700", "descriptionComp"]
+- ["C8SwiftEDI4C700", "documentMessageNumber_1004"]
+- ["C8SwiftEDI4C700", "freeText_4440"]
+- ["C8SwiftEDI4C700", "givenName_3809"]
+- ["C8SwiftEDI4C700", "init"]
+- ["C8SwiftEDI4C700", "numberOfUnitsQualifier_6353"]
+- ["C8SwiftEDI4C700", "otherNames_9754"]
+- ["C8SwiftEDI4C700", "partyName_3036"]
+- ["C8SwiftEDI4C700", "placeLocation_3224"]
+- ["C8SwiftEDI4C700", "processingIndicatorCoded_7365"]
+- ["C8SwiftEDI4C700", "sourceCoded_9890"]
+- ["C8SwiftEDI4C700", "surname_3808"]
+- !private ["Ps11CVarArgType", "enderFix"]
+- !private ["Ps10Comparable", "enderFix"]
+- ["C8SwiftEDI9Composite", "String"]
+- ["C8SwiftEDI9Composite", "cityName_3164"]
+- ["C8SwiftEDI9Composite", "confirmationIndicator1_9813"]
+- ["C8SwiftEDI9Composite", "confirmationIndicator_9813"]
+- ["C8SwiftEDI9Composite", "countryCoded_3207"]
+- ["C8SwiftEDI9Composite", "countrySubEntityName_3228"]
+- ["C8SwiftEDI9Composite", "dateTimePeriod1_2380"]
+- ["C8SwiftEDI9Composite", "dateTimePeriod2_2380"]
+- !private ["C8SwiftEDI9Composite", "descEDI"]
+- ["C8SwiftEDI9Composite", "descriptionComp"]
+- ["C8SwiftEDI9Composite", "documentMessageNumber_1004"]
+- ["C8SwiftEDI9Composite", "freeText_4440"]
+- ["C8SwiftEDI9Composite", "givenName_3809"]
+- ["C8SwiftEDI9Composite", "init"]
+- ["C8SwiftEDI9Composite", "numberOfUnitsQualifier_6353"]
+- ["C8SwiftEDI9Composite", "otherNames_9754"]
+- ["C8SwiftEDI9Composite", "partyName_3036"]
+- ["C8SwiftEDI9Composite", "placeLocation_3224"]
+- ["C8SwiftEDI9Composite", "processingIndicatorCoded_7365"]
+- ["C8SwiftEDI9Composite", "sourceCoded_9890"]
+- ["C8SwiftEDI9Composite", "surname_3808"]
+- ["C8SwiftEDI9Composite", ""]
+- !private ["Ps28CustomDebugStringConvertible", "enderFix"]
+- !private ["Ps23CustomStringConvertible", "enderFix"]
+- !private ["Ps9Equatable", "enderFix"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "enderFix"]
+- !private ["Ps8Hashable", "enderFix"]
+- !private ["Ps14MirrorPathType", "enderFix"]
+- !private ["PSo8NSCoding", "enderFix"]
+- !private ["PSo9NSCopying", "enderFix"]
+- !private ["PSo16NSMutableCopying", "enderFix"]
+- !private ["CSo8NSObject", "enderFix"]
+- !private ["PSo16NSObjectProtocol", "enderFix"]
+- !private ["PSo14NSSecureCoding", "enderFix"]
+- !private ["CSo8NSString", "enderFix"]
+- !private ["Ps16OutputStreamType", "enderFix"]
+- !private ["Ps10Streamable", "enderFix"]
+- !private ["SS", "enderFix"]
+- !private ["Ps30StringInterpolationConvertible", "enderFix"]
+- !private ["Ps24StringLiteralConvertible", "enderFix"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "enderFix"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "enderFix"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "enderFix"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "enderFix"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "enderFix"]
+- !private ["Ps21_ObjectiveCBridgeable", "enderFix"]
+- !private ["Ps12_Reflectable", "enderFix"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C8SwiftEDI4C700"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "C8SwiftEDI9Composite"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps8Hashable"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/larryEmcgee/StanfordUniversity/SwiftEDI/SwiftEDI-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+interface-hash: "609903ea81924b37881b24de8824a038"

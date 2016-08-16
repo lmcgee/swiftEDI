@@ -7,11 +7,11 @@ provides-member:
 - ["C8SwiftEDI7Segment", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- "Segment"
-- "Composite"
-- "String"
 - !private "UnicodeScalarType"
+- "Segment"
+- !private "StringLiteralType"
+- "String"
+- "Composite"
 depends-member:
 - !private ["Ps9AnyObject", "appendContentsOf"]
 - ["Ps9AnyObject", "descEDISeg"]

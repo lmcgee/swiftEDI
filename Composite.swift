@@ -9,11 +9,29 @@
 extension String {
     mutating func enderFix() {
         var ender = self.endIndex.advancedBy(-1)
-        while self[ender] == ":" {
-            self.removeAtIndex(ender)
-            
-            ender = ender.predecessor()
+
+        while !self.isEmpty && self[ender] == ":" //&& self[ender.successor()] == "+"
+            {
+                self.removeAtIndex(ender)
+                if ender > self.startIndex {
+                ender = ender.predecessor()
+                } else {
+                // new test code added 08/15/16
+                self.insert("+", atIndex: self.endIndex)
+                }
+            }
+        self.insert("+", atIndex: self.endIndex)
+        
+    }
+}
+
+extension String {
+    mutating func endFinal() {
+        while self[self.endIndex.predecessor()] == "+"  {
+            self.removeAtIndex(self.endIndex.predecessor())
+            self.endIndex.predecessor()
         }
+        self.insert("'", atIndex: self.endIndex)
     }
 }
 

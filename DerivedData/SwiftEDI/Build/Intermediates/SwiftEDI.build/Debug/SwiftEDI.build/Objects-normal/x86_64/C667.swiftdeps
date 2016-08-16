@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "C667"
 - "Composite"
+- "C667"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "actionRequestNotificationCoded_1229"]

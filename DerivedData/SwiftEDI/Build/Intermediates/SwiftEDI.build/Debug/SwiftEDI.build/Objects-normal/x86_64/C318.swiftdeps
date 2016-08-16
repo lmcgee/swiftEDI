@@ -7,9 +7,9 @@ provides-member:
 - ["C8SwiftEDI4C318", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "C318"
 - "Composite"
 - "String"
+- "C318"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "checkInDetails_9952"]

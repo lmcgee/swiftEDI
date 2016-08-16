@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "C693"
-- "Composite"
 - "String"
 - "StringLiteralType"
+- "Composite"
 depends-member:
 - ["Ps9AnyObject", "carrierIdentification_3127"]
 - ["Ps9AnyObject", "departureDateAndTime_2281"]

@@ -7,8 +7,8 @@ provides-member:
 - ["C8SwiftEDI4C320", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Composite"
 - "String"
+- "Composite"
 - "C320"
 - "StringLiteralType"
 depends-member:

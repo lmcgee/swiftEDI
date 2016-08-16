@@ -7,9 +7,9 @@ provides-member:
 - ["C8SwiftEDI4C507", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "C507"
 - "Composite"
 - "String"
+- "C507"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "dateTimePeriodFormatQualifier_2379"]

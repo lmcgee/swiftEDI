@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "Composite"
 - "C689"
+- "Composite"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "descEDI"]

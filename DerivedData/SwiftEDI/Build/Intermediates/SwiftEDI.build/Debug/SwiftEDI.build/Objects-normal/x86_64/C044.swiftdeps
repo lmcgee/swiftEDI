@@ -7,10 +7,10 @@ provides-member:
 - ["C8SwiftEDI4C044", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Composite"
 - "C044"
+- "Composite"
 - "StringLiteralType"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "cabinClassDesignator_9854"]
 - ["Ps9AnyObject", "cabinClassOfServiceCoded_9873"]

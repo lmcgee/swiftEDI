@@ -7,10 +7,10 @@ provides-member:
 - ["C8SwiftEDI4Cxxx", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
+- "Composite"
 - "Cxxx"
 - "String"
-- "Composite"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "dataIndicator_9988"]
 - !private ["Ps9AnyObject", "descEDI"]

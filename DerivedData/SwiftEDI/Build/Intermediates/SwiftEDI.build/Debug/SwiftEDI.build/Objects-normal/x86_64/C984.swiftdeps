@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "C984"
-- "Composite"
-- "String"
 - "StringLiteralType"
+- "String"
+- "Composite"
 depends-member:
 - ["Ps9AnyObject", "chargePeriodTypeCoded_2901"]
 - ["Ps9AnyObject", "chargeUnitCoded_5901"]

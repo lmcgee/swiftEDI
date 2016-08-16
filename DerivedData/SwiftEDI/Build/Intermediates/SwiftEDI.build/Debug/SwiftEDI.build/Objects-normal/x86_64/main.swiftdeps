@@ -2,42 +2,115 @@
 provides-top-level:
 - "name"
 - "myC997"
+- "my1C997"
+- "myC337"
+- "myC300"
+- "myC328"
+- "my1C000"
+- "my2C000"
+- "myABI"
 - "myAAI"
 - "addr"
 - "ender"
+- "tVLC310"
+- "tVLC328"
+- "tVL1C328"
+- "tVLC306"
+- "tVLC308"
+- "tVLC309"
+- "tVL1C000"
+- "tVL2C000"
+- "tVL1082"
+- "tVL7365"
+- "tVLC311"
+- "myTVL"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "myAAI"
-- "UnicodeScalarType"
-- "ExtendedGraphemeClusterType"
-- "AAI"
-- "addr"
-- "Array"
-- "FloatLiteralType"
-- "=="
 - "IntegerLiteralType"
-- "C997"
+- "addr"
+- "=="
+- "tVL1082"
+- "print"
+- "myC300"
+- "ABI"
+- "tVLC306"
+- "C328"
+- "my1C997"
+- "myABI"
+- "tVLC310"
+- "Array"
+- "tVLC308"
+- "tVLC311"
+- "C306"
+- "StringLiteralType"
+- "myC337"
+- "tVL1C000"
+- "myC328"
+- "C000"
+- "C337"
+- "UnicodeScalarType"
+- "my2C000"
+- "name"
 - "myC997"
 - "ender"
-- "print"
-- "name"
-- "StringLiteralType"
+- "C997"
+- "tVLC328"
+- "AAI"
+- "my1C000"
+- "C309"
+- "tVL1C328"
+- "C310"
+- "tVLC309"
+- "ExtendedGraphemeClusterType"
+- "myAAI"
+- "C308"
+- "TVL"
+- "tVL2C000"
+- "tVL7365"
+- "myTVL"
+- "FloatLiteralType"
+- "C311"
+- "C300"
 depends-member:
 - ["C8SwiftEDI3AAI", "description"]
 - ["C8SwiftEDI3AAI", "init"]
+- ["C8SwiftEDI3ABI", "description"]
+- ["C8SwiftEDI3ABI", "init"]
 - ["Ps9AnyObject", "accommodationType_7904"]
 - ["Ps9AnyObject", "characteristicCoded_7907"]
+- ["Ps9AnyObject", "characteristicIdentification_7037"]
+- ["Ps9AnyObject", "companyIdentification_9906"]
+- ["Ps9AnyObject", "dateVariation_9954"]
 - ["Ps9AnyObject", "description"]
+- ["Ps9AnyObject", "descriptionComp"]
 - ["Ps9AnyObject", "endIndex"]
+- ["Ps9AnyObject", "firstDate_9916"]
+- ["Ps9AnyObject", "firstTime_9918"]
+- ["Ps9AnyObject", "groupNumber_9995"]
+- ["Ps9AnyObject", "inHouseIdentification_9902"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "itemDescriptionIdentification_7009"]
+- ["Ps9AnyObject", "lineItemNumber_1082"]
+- ["Ps9AnyObject", "placeLocationIdentification_3225"]
+- ["Ps9AnyObject", "placeLocation_3224"]
+- ["Ps9AnyObject", "productIdentificationCharacteristic_9914"]
+- ["Ps9AnyObject", "productIdentification_9908"]
 - ["Ps9AnyObject", "rangeOfString"]
 - ["Ps9AnyObject", "referenceNumber_1154"]
+- ["Ps9AnyObject", "relationCoded1_5479"]
+- ["Ps9AnyObject", "relationCoded_5479"]
 - ["Ps9AnyObject", "relationshipCoded_9143"]
 - ["Ps9AnyObject", "removeAtIndex"]
+- ["Ps9AnyObject", "secondDate_9920"]
+- ["Ps9AnyObject", "secondTime_9922"]
+- ["Ps9AnyObject", "sectorSubjectIdentificationQualifier_7293"]
+- ["Ps9AnyObject", "sequenceNumber_1050"]
 - ["Ps9AnyObject", "specialRequirementData_9960"]
 - ["Ps9AnyObject", "subscript"]
+- ["Ps9AnyObject", "text_0000"]
+- ["Ps9AnyObject", "travelAgentIdentificationDetails_9900"]
 - ["Sa", "Element"]
 - ["Ps23ArrayLiteralConvertible", "Element"]
 - ["Ps23ArrayLiteralConvertible", "RegularExpressionSearch"]
@@ -45,14 +118,45 @@ depends-member:
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - ["Ps22BidirectionalIndexType", "advancedBy"]
 - ["Ps22BidirectionalIndexType", "predecessor"]
-- ["Ps22BidirectionalIndexType", "successor"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["C8SwiftEDI4C000", "init"]
+- ["C8SwiftEDI4C000", "text_0000"]
+- ["C8SwiftEDI4C300", "inHouseIdentification_9902"]
+- ["C8SwiftEDI4C300", "init"]
+- ["C8SwiftEDI4C300", "travelAgentIdentificationDetails_9900"]
+- ["C8SwiftEDI4C306", "companyIdentification_9906"]
+- ["C8SwiftEDI4C306", "init"]
+- ["C8SwiftEDI4C308", "characteristicIdentification_7037"]
+- ["C8SwiftEDI4C308", "init"]
+- ["C8SwiftEDI4C308", "itemDescriptionIdentification_7009"]
+- ["C8SwiftEDI4C308", "productIdentificationCharacteristic_9914"]
+- ["C8SwiftEDI4C308", "productIdentification_9908"]
+- ["C8SwiftEDI4C309", "init"]
+- ["C8SwiftEDI4C309", "sequenceNumber_1050"]
+- ["C8SwiftEDI4C310", "dateVariation_9954"]
+- ["C8SwiftEDI4C310", "firstDate_9916"]
+- ["C8SwiftEDI4C310", "firstTime_9918"]
+- ["C8SwiftEDI4C310", "init"]
+- ["C8SwiftEDI4C310", "secondDate_9920"]
+- ["C8SwiftEDI4C310", "secondTime_9922"]
+- ["C8SwiftEDI4C311", "companyIdentification_9906"]
+- ["C8SwiftEDI4C311", "groupNumber_9995"]
+- ["C8SwiftEDI4C311", "init"]
+- ["C8SwiftEDI4C311", "lineItemNumber_1082"]
+- ["C8SwiftEDI4C311", "relationCoded1_5479"]
+- ["C8SwiftEDI4C311", "relationCoded_5479"]
+- ["C8SwiftEDI4C328", "init"]
+- ["C8SwiftEDI4C328", "placeLocationIdentification_3225"]
+- ["C8SwiftEDI4C328", "placeLocation_3224"]
+- ["C8SwiftEDI4C337", "init"]
+- ["C8SwiftEDI4C337", "sectorSubjectIdentificationQualifier_7293"]
 - ["C8SwiftEDI4C997", "accommodationType_7904"]
 - ["C8SwiftEDI4C997", "characteristicCoded_7907"]
+- ["C8SwiftEDI4C997", "descriptionComp"]
 - ["C8SwiftEDI4C997", "init"]
 - ["C8SwiftEDI4C997", "referenceNumber_1154"]
 - ["C8SwiftEDI4C997", "relationshipCoded_9143"]
@@ -74,14 +178,35 @@ depends-member:
 - ["Ps10Comparable", "rangeOfString"]
 - ["Ps10Comparable", "removeAtIndex"]
 - ["Ps10Comparable", "subscript"]
-- ["Ps10Comparable", "successor"]
 - ["C8SwiftEDI9Composite", "accommodationType_7904"]
 - ["C8SwiftEDI9Composite", "characteristicCoded_7907"]
+- ["C8SwiftEDI9Composite", "characteristicIdentification_7037"]
+- ["C8SwiftEDI9Composite", "companyIdentification_9906"]
+- ["C8SwiftEDI9Composite", "dateVariation_9954"]
 - ["C8SwiftEDI9Composite", "description"]
+- ["C8SwiftEDI9Composite", "descriptionComp"]
+- ["C8SwiftEDI9Composite", "firstDate_9916"]
+- ["C8SwiftEDI9Composite", "firstTime_9918"]
+- ["C8SwiftEDI9Composite", "groupNumber_9995"]
+- ["C8SwiftEDI9Composite", "inHouseIdentification_9902"]
 - ["C8SwiftEDI9Composite", "init"]
+- ["C8SwiftEDI9Composite", "itemDescriptionIdentification_7009"]
+- ["C8SwiftEDI9Composite", "lineItemNumber_1082"]
+- ["C8SwiftEDI9Composite", "placeLocationIdentification_3225"]
+- ["C8SwiftEDI9Composite", "placeLocation_3224"]
+- ["C8SwiftEDI9Composite", "productIdentificationCharacteristic_9914"]
+- ["C8SwiftEDI9Composite", "productIdentification_9908"]
 - ["C8SwiftEDI9Composite", "referenceNumber_1154"]
+- ["C8SwiftEDI9Composite", "relationCoded1_5479"]
+- ["C8SwiftEDI9Composite", "relationCoded_5479"]
 - ["C8SwiftEDI9Composite", "relationshipCoded_9143"]
+- ["C8SwiftEDI9Composite", "secondDate_9920"]
+- ["C8SwiftEDI9Composite", "secondTime_9922"]
+- ["C8SwiftEDI9Composite", "sectorSubjectIdentificationQualifier_7293"]
+- ["C8SwiftEDI9Composite", "sequenceNumber_1050"]
 - ["C8SwiftEDI9Composite", "specialRequirementData_9960"]
+- ["C8SwiftEDI9Composite", "text_0000"]
+- ["C8SwiftEDI9Composite", "travelAgentIdentificationDetails_9900"]
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "endIndex"]
@@ -109,7 +234,6 @@ depends-member:
 - ["Ps9Equatable", "rangeOfString"]
 - ["Ps9Equatable", "removeAtIndex"]
 - ["Ps9Equatable", "subscript"]
-- ["Ps9Equatable", "successor"]
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "endIndex"]
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "rangeOfString"]
@@ -120,7 +244,6 @@ depends-member:
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps16ForwardIndexType", "advancedBy"]
 - ["Ps16ForwardIndexType", "predecessor"]
-- ["Ps16ForwardIndexType", "successor"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "endIndex"]
@@ -132,7 +255,6 @@ depends-member:
 - ["VVSS13CharacterView5Index", "advancedBy"]
 - ["VVSS13CharacterView5Index", "deinit"]
 - ["VVSS13CharacterView5Index", "predecessor"]
-- ["VVSS13CharacterView5Index", "successor"]
 - ["Ps9Indexable", "Element"]
 - ["Si", "IntegerLiteralType"]
 - ["Si", "deinit"]
@@ -226,6 +348,8 @@ depends-member:
 - ["Ps24StringLiteralConvertible", "rangeOfString"]
 - ["Ps24StringLiteralConvertible", "removeAtIndex"]
 - ["Ps24StringLiteralConvertible", "subscript"]
+- ["C8SwiftEDI3TVL", "description"]
+- ["C8SwiftEDI3TVL", "init"]
 - ["Su", "deinit"]
 - ["Vs6UInt16", "deinit"]
 - ["Vs6UInt32", "deinit"]
@@ -265,7 +389,6 @@ depends-member:
 - ["Ps14_Incrementable", "IntegerLiteralType"]
 - ["Ps14_Incrementable", "advancedBy"]
 - ["Ps14_Incrementable", "predecessor"]
-- ["Ps14_Incrementable", "successor"]
 - ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
 - ["Ps12_IntegerType", "IntegerLiteralType"]
 - ["Ps21_ObjectiveCBridgeable", "Element"]
@@ -289,10 +412,10 @@ depends-member:
 - ["Ps12_Reflectable", "rangeOfString"]
 - ["Ps12_Reflectable", "removeAtIndex"]
 - ["Ps12_Reflectable", "subscript"]
-- ["Ps12_Reflectable", "successor"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - "C8SwiftEDI3AAI"
+- "C8SwiftEDI3ABI"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23ArrayLiteralConvertible"
@@ -301,6 +424,15 @@ depends-nominal:
 - "Sb"
 - "Ps25BooleanLiteralConvertible"
 - "Ps11BooleanType"
+- "C8SwiftEDI4C000"
+- "C8SwiftEDI4C300"
+- "C8SwiftEDI4C306"
+- "C8SwiftEDI4C308"
+- "C8SwiftEDI4C309"
+- "C8SwiftEDI4C310"
+- "C8SwiftEDI4C311"
+- "C8SwiftEDI4C328"
+- "C8SwiftEDI4C337"
 - "C8SwiftEDI4C997"
 - "Ps11CVarArgType"
 - "Vs9Character"
@@ -354,6 +486,7 @@ depends-nominal:
 - "SS"
 - "Ps30StringInterpolationConvertible"
 - "Ps24StringLiteralConvertible"
+- "C8SwiftEDI3TVL"
 - "Su"
 - "Vs6UInt16"
 - "Vs6UInt32"
@@ -386,4 +519,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "fc4548c228864682f5946fc31426a3be"
+interface-hash: "87ea3c3d83ce766a12bb42c0f40d4ad0"

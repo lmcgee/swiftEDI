@@ -8,14 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "C997"
-- "AAI"
-- !private "FloatLiteralType"
-- !private "UnicodeScalarType"
-- !private "IntegerLiteralType"
-- "Segment"
-- !private "+="
-- "String"
 - !private "StringLiteralType"
+- "Segment"
+- "AAI"
+- "String"
 depends-member:
 - ["C8SwiftEDI3AAI", "C997"]
 - ["C8SwiftEDI3AAI", "String"]
@@ -29,8 +25,11 @@ depends-member:
 - ["Ps9AnyObject", "accommodationAllocationInformation_C997"]
 - !private ["Ps9AnyObject", "descEDISeg"]
 - ["Ps9AnyObject", "description"]
+- !private ["Ps9AnyObject", "endFinal"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "endFinal"]
+- !private ["Ps10Comparable", "endFinal"]
 - ["C8SwiftEDI9Composite", "C997"]
 - ["C8SwiftEDI9Composite", "String"]
 - ["C8SwiftEDI9Composite", "accommodationAllocationInformation1_C997"]
@@ -38,6 +37,20 @@ depends-member:
 - !private ["C8SwiftEDI9Composite", "descEDISeg"]
 - ["C8SwiftEDI9Composite", "description"]
 - ["C8SwiftEDI9Composite", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "endFinal"]
+- !private ["Ps23CustomStringConvertible", "endFinal"]
+- !private ["Ps9Equatable", "endFinal"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "endFinal"]
+- !private ["Ps8Hashable", "endFinal"]
+- !private ["Ps14MirrorPathType", "endFinal"]
+- !private ["PSo8NSCoding", "endFinal"]
+- !private ["PSo9NSCopying", "endFinal"]
+- !private ["PSo16NSMutableCopying", "endFinal"]
+- !private ["CSo8NSObject", "endFinal"]
+- !private ["PSo16NSObjectProtocol", "endFinal"]
+- !private ["PSo14NSSecureCoding", "endFinal"]
+- !private ["CSo8NSString", "endFinal"]
+- !private ["Ps16OutputStreamType", "endFinal"]
 - ["C8SwiftEDI7Segment", "C997"]
 - ["C8SwiftEDI7Segment", "String"]
 - ["C8SwiftEDI7Segment", "accommodationAllocationInformation1_C997"]
@@ -47,12 +60,50 @@ depends-member:
 - ["C8SwiftEDI7Segment", "init"]
 - ["C8SwiftEDI7Segment", ""]
 - !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "endFinal"]
+- !private ["SS", "endFinal"]
+- !private ["Ps30StringInterpolationConvertible", "endFinal"]
+- !private ["Ps24StringLiteralConvertible", "endFinal"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "endFinal"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "endFinal"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "endFinal"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "endFinal"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "endFinal"]
+- !private ["Ps21_ObjectiveCBridgeable", "endFinal"]
+- !private ["Ps12_Reflectable", "endFinal"]
 depends-nominal:
 - "C8SwiftEDI3AAI"
 - "Ps9AnyObject"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
 - "C8SwiftEDI9Composite"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps8Hashable"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
 - "C8SwiftEDI7Segment"
 - !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -63,4 +114,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "c34a899415e3a479b72b7d22cdaed9ba"
+interface-hash: "4c3a1a86415dfc091c5a55c3ba3080de"

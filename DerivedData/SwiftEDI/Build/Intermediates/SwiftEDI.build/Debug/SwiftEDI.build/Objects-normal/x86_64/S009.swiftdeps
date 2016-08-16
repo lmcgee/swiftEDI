@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "S009"
-- "Composite"
 - "String"
 - "StringLiteralType"
+- "Composite"
 depends-member:
 - ["Ps9AnyObject", "associationAssignedCode_0057"]
 - ["Ps9AnyObject", "controllingAgencyCoded_0051"]
